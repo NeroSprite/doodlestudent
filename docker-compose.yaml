@@ -10,7 +10,7 @@ services:
       - MYSQL_DATABASE=doodle
       - MYSQL_USER=doodle
       - MYSQL_PASSWORD=doodle
-      
+
   etherpad:
     image: etherpad/etherpad:stable
     ports:
@@ -22,3 +22,10 @@ services:
     restart: always
     ports:
       - "2525:25"
+
+  back:
+    build : ./api/
+    ports:
+      - "8080:8080"
+  
+  
