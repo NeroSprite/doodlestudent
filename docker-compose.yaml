@@ -48,7 +48,7 @@ services:
       target : prod
     ports:
       - 80:8080
-      - 443:443
+      - 443:8443
     volumes:
       - ./api/server-confs:/server-confs:ro
     environment:
