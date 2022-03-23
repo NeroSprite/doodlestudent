@@ -12,7 +12,7 @@ services:
       - MYSQL_PASSWORD=tlc
 
   etherpad:
-    image: etherpad/etherpad:latest
+    image: etherpad/etherpad:stable
     container_name: etherpad
     ports:
       - "9001:9001"
