@@ -14,7 +14,7 @@ services:
       - ./mysql_data:/var/lib/mysql
 
   etherpad:
-    image: etherpad/etherpad:stable
+    image: etherpad/etherpad:latest
     container_name: etherpad
     ports:
       - "9001:9001"
