@@ -6,7 +6,7 @@ services:
       - "3306:3306"
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=true
-      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_ROOT_PASSWORD=tlc
       - MYSQL_DATABASE=tlc
       - MYSQL_USER=tlc
       - MYSQL_PASSWORD=tlc
@@ -52,7 +52,7 @@ services:
     volumes:
       - ./api/server-confs:/server-confs:ro
     environment:
-      - SERVER_NAME=degas.diverse-team.fr
+      - SERVER_NAME=degas.diverse-team.fr pad.degas.diverse-team.fr
       - SERVE_FILES=yes
       - AUTO_LETS_ENCRYPT=yes
       - REDIRECT_HTTP_TO_HTTPS=yes
