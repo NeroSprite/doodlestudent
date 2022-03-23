@@ -10,6 +10,8 @@ services:
       - MYSQL_DATABASE=tlc
       - MYSQL_USER=tlc
       - MYSQL_PASSWORD=tlc
+    volumes:
+      - ./mysql_data:/var/lib/mysql
 
   etherpad:
     image: etherpad/etherpad:stable
