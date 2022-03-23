@@ -38,6 +38,7 @@ services:
     restart: always
     environment:
       - doodle.internalPadUrl=http://etherpad:9001/
+      - doodle.externalPadUrl=http://pad.degas.diverse-team.fr/
       - quarkus.datasource.jdbc.url=jdbc:mysql://db:3306/tlc?useUnicode=true&serverTimezone=Europe/Paris
   
 
